@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Facebook and Instagram Post Scheduler</title>
+    <link rel="stylesheet" href="multiple.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Facebook and Instagram Post Scheduler</h1>
+        <form>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="link">Link:</label>
+                <input type="text" id="link">
+            </div>
+            <div id="images">
+                <div class="form-group">
+                    <label for="image1">Image 1:</label>
+                    <input type="file" id="image1">
+                </div>
+                <div class="form-group">
+                    <label for="caption1">Caption 1:</label>
+                    <textarea id="caption1"></textarea>
+                </div>
+            </div>
+            <button type="button" class="add-image-btn" onclick="addImage()">Add Image</button>
+            <button type="button" class="schedule-btn" onclick="schedulePost()">Schedule</button>
+        </form>
+    </div>
+    <script src="multiple.js"></script>
+</body>
+</html>

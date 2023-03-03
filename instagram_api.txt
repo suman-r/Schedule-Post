@@ -1,0 +1,12 @@
+You can obtain the Instagram API endpoint by following these steps:
+
+Log in to the Facebook Developers Dashboard with your Facebook account.
+Click on the "Add a New App" button and follow the prompts to create a new app.
+Once your app is created, go to the "Instagram" tab and click on the "Basic Display" link.
+Click on the "Create New App" button and follow the prompts to create a new app on Instagram.
+Once your Instagram app is created, you will see a "Client ID" and "Client Secret" in the "Basic Display" settings. Copy the "Client ID".
+In the "Basic Display" settings, scroll down to the "Client OAuth Settings" section and add the following "Valid OAuth Redirect URIs": https://localhost:5000/instagram_callback (assuming you are running your application on localhost:5000).
+Save the changes to your Instagram app.
+You can now use the following endpoint to obtain an access token for Instagram: https://api.instagram.com/oauth/authorize?client_id=CLIENT_ID&redirect_uri=https://localhost:5000/instagram_callback&scope=user_profile,user_media&response_type=code (replace CLIENT_ID with the client ID of your Instagram app).
+Once you have obtained an authorization code, you can use the following endpoint to exchange it for an access token: https://api.instagram.com/oauth/access_token.
+Note that the Instagram API has some limitations and restrictions on what you can do with it. Make sure to read and follow the API terms and policies.

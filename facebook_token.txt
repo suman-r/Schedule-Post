@@ -1,0 +1,18 @@
+You can get a Facebook access token by following these steps:
+
+Log in to Facebook and go to the Facebook for Developers website.
+Click the "Get Started" button in the top right corner.
+Select "Build Connected Experiences" and then "Create App ID".
+Follow the prompts to create a new app. Choose a name and category for your app, and enter your contact email.
+Once your app is created, you'll be taken to the app dashboard. Go to the "Settings" tab and select "Basic".
+In the "Basic" settings, you'll see an "App ID" and "App Secret". Copy the "App ID".
+To get an access token, you can use the Facebook Graph API Explorer. In the Graph API Explorer, select your app from the dropdown in the top right corner.
+Click the "Get User Access Token" button. This will open a dialog where you can choose the permissions your app needs. Select the permissions you need for your app to post to Facebook and click "Generate Access Token".
+Copy the access token and use it in your application.
+Note that access tokens expire after a certain period of time. You can extend the lifetime of a token using the Facebook API.
+
+links for the above documentation:
+Facebook for Developers website: https://developers.facebook.com/
+Facebook Graph API Explorer: https://developers.facebook.com/tools/explorer/
+Facebook access tokens documentation: https://developers.facebook.com/docs/facebook-login/access-tokens/
+Facebook API access token extension documentation: https://developers.facebook.com/docs/facebook-login/access-tokens/refreshing/
